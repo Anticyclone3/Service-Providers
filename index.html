@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Provider Platform | The Confident Mindset</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/popup.css">
+    <!-- HubSpot Script Loader -->
+    <!-- <script src="./the-confidentmindset.com/hs/scriptloader/9082919.js"></script> -->
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="c:\Users\HP\Desktop\Images\Logo.PNG"  height="40">
+                Service Provider Platform
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="providers.html">Find Providers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white ms-2" href="login.html">Login / Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container text-center py-5">
+            <h1 class="display-4 mb-4">Find Local Service Providers Near You</h1>
+            <p class="lead mb-4">Connect with trusted professionals for all your needs - from plumbers to babysitters and more.</p>
+            
+            <!-- Search Form -->
+            <div class="search-container mx-auto">
+                <form class="row g-3 justify-content-center">
+                    <div class="col-md-4">
+                        <select class="form-select" id="serviceType">
+                            <option selected>Select Service Type</option>
+                            <option value="plumber">Plumber</option>
+                            <option value="electrician">Electrician</option>
+                            <option value="babysitter">Babysitter</option>
+                            <option value="cleaner">House Cleaner</option>
+                            <option value="gardener">Gardener</option>
+                            <option value="tutor">Tutor</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="location" placeholder="Your Location">
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-primary w-100">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Services -->
+    <section class="featured-services py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Popular Service Categories</h2>
+            <div class="row g-4">
+                <!-- Service Card 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <div class="icon-container mb-3">
+                                <i class="fas fa-wrench fa-3x"></i>
+                            </div>
+                            <h3 class="card-title">Home Repair</h3>
+                            <p class="card-text">Find skilled professionals for all your home repair needs, from plumbing to electrical work.</p>
+                            <a href="services.html#home-repair" class="btn btn-outline-primary">Find Providers</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <div class="icon-container mb-3">
+                                <i class="fas fa-baby fa-3x"></i>
+                            </div>
+                            <h3 class="card-title">Childcare</h3>
+                            <p class="card-text">Connect with trusted babysitters and nannies in your area for reliable childcare services.</p>
+                            <a href="services.html#childcare" class="btn btn-outline-primary">Find Providers</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <div class="icon-container mb-3">
+                                <i class="fas fa-broom fa-3x"></i>
+                            </div>
+                            <h3 class="card-title">Cleaning</h3>
+                            <p class="card-text">Hire professional cleaners for your home or office to maintain a clean and healthy environment.</p>
+                            <a href="services.html#cleaning" class="btn btn-outline-primary">Find Providers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">How It Works</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="step text-center">
+                        <div class="step-number">1</div>
+                        <h3>Search</h3>
+                        <p>Browse through our extensive list of service categories or use the search function to find what you need.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="step text-center">
+                        <div class="step-number">2</div>
+                        <h3>Connect</h3>
+                        <p>View profiles, read reviews, and connect directly with service providers in your area.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="step text-center">
+                        <div class="step-number">3</div>
+                        <h3>Book & Review</h3>
+                        <p>Schedule appointments, receive service, and leave reviews to help others in the community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Preview -->
+    <section class="testimonials-preview py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Users Say</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-card text-center p-4">
+                                    <p class="testimonial-text">"I found an amazing babysitter through this platform. The verification process gave me peace of mind, and my kids love her!"</p>
+                                    <div class="testimonial-author">
+                                        <h5>Sarah Johnson</h5>
+                                        <p class="text-muted">Parent of two</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card text-center p-4">
+                                    <p class="testimonial-text">"As a plumber, this platform has helped me connect with new clients in my area. The booking system is straightforward and professional."</p>
+                                    <div class="testimonial-author">
+                                        <h5>Mike Rodriguez</h5>
+                                        <p class="text-muted">Professional Plumber</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card text-center p-4">
+                                    <p class="testimonial-text">"When my AC broke down in the middle of summer, I found a technician who came the same day. Excellent service and fair pricing!"</p>
+                                    <div class="testimonial-author">
+                                        <h5>Emily Chen</h5>
+                                        <p class="text-muted">Homeowner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="testimonials.html" class="btn btn-outline-primary">View All Testimonials</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section py-5 bg-primary text-white text-center">
+        <div class="container">
+            <h2 class="mb-4">Ready to Get Started?</h2>
+            <p class="lead mb-4">Join our community of service providers and customers today!</p>
+            <div class="row justify-content-center g-3">
+                <div class="col-md-4">
+                    <a href="register-provider.html" class="btn btn-light btn-lg w-100">Register as Provider</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="login.html" class="btn btn-outline-light btn-lg w-100">Login as User</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Service Provider Platform</h5>
+                    <p>Connecting quality service providers with customers in need.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="services.html" class="text-white">Services</a></li>
+                        <li><a href="providers.html" class="text-white">Providers</a></li>
+                        <li><a href="the-confidentmindset.com/testimonials.html" class="text-white">Testimonials</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Service Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html#home-repair" class="text-white">Home Repair</a></li>
+                        <li><a href="services.html#childcare" class="text-white">Childcare</a></li>
+                        <li><a href="services.html#cleaning" class="text-white">Cleaning</a></li>
+                        <li><a href="services.html#tutoring" class="text-white">Tutoring</a></li>
+                        <li><a href="services.html#landscaping" class="text-white">Landscaping</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Service St, City, Country</p>
+                        <p><i class="fas fa-phone me-2"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@serviceproviderplatform.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Service Provider Platform. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="privacy-policy.html" class="text-white me-3">Privacy Policy</a>
+                        <a href="terms-of-service.html" class="text-white">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provider Profile | Service Provider Platform</title>
+    <link rel="shortcut icon" href="https://the-confidentmindset.com/hubfs/Screenshot%202023-11-27%20at%2019.14.06-1.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- HubSpot Script Loader -->
+    <script src="./the-confidentmindset.com/hs/scriptloader/9082919.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                 <img src="c:\Users\HP\Desktop\Images\Logo.PNG"  height="40">
+                Service Provider Platform
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="providers.html">Find Providers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="the-confidentmindset.com/testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white ms-2" href="login.html">Login / Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Provider Profile Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Provider Info Card -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="card shadow provider-profile-card">
+                        <div class="card-body text-center">
+                            <div class="provider-profile-img-container mb-4">
+                                <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-1516680-1.jpeg" alt="John Smith" class="provider-profile-img">
+                                <div class="provider-badges">
+                                    <span class="badge bg-success"><i class="fas fa-check-circle"></i> Verified</span>
+                                    <span class="badge bg-info"><i class="fas fa-shield-alt"></i> Background Checked</span>
+                                </div>
+                            </div>
+                            <h2 class="provider-name mb-1">John Smith</h2>
+                            <p class="provider-title text-muted mb-3">Professional Plumber</p>
+                            <div class="provider-rating mb-3">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                                <span class="rating-value">4.7</span>
+                                <span class="rating-count">(124 reviews)</span>
+                            </div>
+                            <div class="provider-details mb-4">
+                                <p><i class="fas fa-map-marker-alt text-primary me-2"></i> Chicago, IL (Serves within 15 miles)</p>
+                                <p><i class="fas fa-tools text-primary me-2"></i> Plumbing, Pipe Repair, Water Heater Installation</p>
+                                <p><i class="fas fa-clock text-primary me-2"></i> 8+ Years Experience</p>
+                            </div>
+                            <div class="provider-contact mb-4">
+                                <a href="tel:+1234567890" class="btn btn-outline-primary me-2"><i class="fas fa-phone"></i> Call</a>
+                                <a href="mailto:john.smith@example.com" class="btn btn-outline-primary"><i class="fas fa-envelope"></i> Email</a>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                                    <i class="fas fa-calendar-check me-2"></i> Book Now
+                                </button>
+                                <button class="btn btn-outline-secondary">
+                                    <i class="far fa-heart me-2"></i> Save to Favorites
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Provider Details -->
+                <div class="col-lg-8">
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <ul class="nav nav-tabs" id="providerTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true">About</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="services-tab" data-bs-toggle="tab" data-bs-target="#services" type="button" role="tab" aria-controls="services" aria-selected="false">Services & Pricing</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="availability-tab" data-bs-toggle="tab" data-bs-target="#availability" type="button" role="tab" aria-controls="availability" aria-selected="false">Availability</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content p-3" id="providerTabContent">
+                                <!-- About Tab -->
+                                <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+                                    <h3 class="mb-4">Professional Background</h3>
+                                    <p>John Smith is a licensed master plumber with over 8 years of experience serving the Chicago area. He specializes in residential and commercial plumbing services, including pipe repair, water heater installation, and emergency plumbing solutions.</p>
+                                    <p>After completing his apprenticeship under a master plumber, John obtained his plumbing license in 2015 and has been dedicated to providing high-quality plumbing services ever since. He takes pride in his attention to detail, punctuality, and commitment to customer satisfaction.</p>
+                                    
+                                    <h4 class="mt-4 mb-3">Qualifications & Certifications</h4>
+                                    <ul class="qualification-list">
+                                        <li><i class="fas fa-certificate text-primary me-2"></i> Licensed Master Plumber (License #PL-12345)</li>
+                                        <li><i class="fas fa-certificate text-primary me-2"></i> Certified in Backflow Prevention</li>
+                                        <li><i class="fas fa-certificate text-primary me-2"></i> Water Heater Installation Specialist</li>
+                                        <li><i class="fas fa-certificate text-primary me-2"></i> Member of the National Plumbing Association</li>
+                                    </ul>
+                                    
+                                    <h4 class="mt-4 mb-3">Service Area</h4>
+                                    <p>John serves the greater Chicago area, including:</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="service-area-list">
+                                                <li>Chicago (Downtown)</li>
+                                                <li>Lincoln Park</li>
+                                                <li>Wicker Park</li>
+                                                <li>Bucktown</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="service-area-list">
+                                                <li>Lakeview</li>
+                                                <li>Evanston</li>
+                                                <li>Oak Park</li>
+                                                <li>Skokie</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Services & Pricing Tab -->
+                                <div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">
+                                    <h3 class="mb-4">Services & Pricing</h3>
+                                    <p class="mb-4">Below are the standard services offered. Please note that prices may vary based on the complexity of the job and materials required. A detailed quote will be provided after initial assessment.</p>
+                                    
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>Service</th>
+                                                    <th>Description</th>
+                                                    <th>Starting Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Drain Cleaning</td>
+                                                    <td>Professional cleaning of clogged drains using specialized equipment</td>
+                                                    <td>$85</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Pipe Repair</td>
+                                                    <td>Fixing leaks, cracks, or breaks in pipes</td>
+                                                    <td>$120</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Water Heater Installation</td>
+                                                    <td>Removal of old unit and installation of new water heater</td>
+                                                    <td>$350</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Water Heater Repair</td>
+                                                    <td>Diagnosis and repair of water heater issues</td>
+                                                    <td>$150</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Faucet Installation</td>
+                                                    <td>Removal of old faucet and installation of new one</td>
+                                                    <td>$95</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Toilet Repair/Replacement</td>
+                                                    <td>Fixing toilet issues or complete replacement</td>
+                                                    <td>$125</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sump Pump Installation</td>
+                                                    <td>Installation of new sump pump system</td>
+                                                    <td>$450</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Emergency Services</td>
+                                                    <td>Urgent plumbing repairs outside regular hours</td>
+                                                    <td>$150</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="alert alert-info mt-4">
+                                        <h5><i class="fas fa-info-circle me-2"></i> Additional Information</h5>
+                                        <ul class="mb-0">
+                                            <li>Standard service call fee: $65 (waived if service is performed)</li>
+                                            <li>Senior and military discounts available (10% off)</li>
+                                            <li>All parts and labor guaranteed for 90 days</li>
+                                            <li>Emergency services available 24/7 (additional fee applies)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <!-- Reviews Tab -->
+                                <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <h3 class="mb-0">Customer Reviews</h3>
+                                        <div class="review-summary">
+                                            <span class="h4 me-2">4.7</span>
+                                            <span class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </span>
+                                            <span class="text-muted">(124 reviews)</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="review-filters mb-4">
+                                        <div class="btn-group" role="group" aria-label="Review filters">
+                                            <button type="button" class="btn btn-outline-primary active">All Reviews</button>
+                                            <button type="button" class="btn btn-outline-primary">5 Star</button>
+                                            <button type="button" class="btn btn-outline-primary">4 Star</button>
+                                            <button type="button" class="btn btn-outline-primary">3 Star</button>
+                                            <button type="button" class="btn btn-outline-primary">2 Star</button>
+                                            <button type="button" class="btn btn-outline-primary">1 Star</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Review Items -->
+                                    <div class="review-list">
+                                        <!-- Review 1 -->
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div class="d-flex">
+                                                        <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-220453-2.jpeg" alt="Customer" class="review-avatar me-3">
+                                                        <div>
+                                                            <h5 class="mb-0">Michael Johnson</h5>
+                                                            <p class="text-muted mb-0">Chicago, IL</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-date text-muted">2 weeks ago</div>
+                                                </div>
+                                                <div class="review-rating mb-2">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <h6 class="review-title">Excellent service, fixed my leak quickly</h6>
+                                                <p class="review-text">John arrived on time and quickly diagnosed the issue with my kitchen sink. He explained what needed to be done, gave me a fair price, and fixed the problem in less than an hour. Very professional and knowledgeable. I'll definitely call him again for any plumbing needs.</p>
+                                                <div class="review-service text-muted">Service: Pipe Repair</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Review 2 -->
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div class="d-flex">
+                                                        <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-774909-3.jpeg" alt="Customer" class="review-avatar me-3">
+                                                        <div>
+                                                            <h5 class="mb-0">Sarah Williams</h5>
+                                                            <p class="text-muted mb-0">Evanston, IL</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-date text-muted">1 month ago</div>
+                                                </div>
+                                                <div class="review-rating mb-2">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <h6 class="review-title">Great water heater installation</h6>
+                                                <p class="review-text">John installed a new water heater for us after our old one failed. He helped us select the right model for our home and completed the installation efficiently. The only reason for 4 stars instead of 5 is that there was a slight delay in arrival time, but he did call to let us know. Overall, very satisfied with the service.</p>
+                                                <div class="review-service text-muted">Service: Water Heater Installation</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Review 3 -->
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div class="d-flex">
+                                                        <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-1516680-1.jpeg" alt="Customer" class="review-avatar me-3">
+                                                        <div>
+                                                            <h5 class="mb-0">David Thompson</h5>
+                                                            <p class="text-muted mb-0">Oak Park, IL</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-date text-muted">2 months ago</div>
+                                                </div>
+                                                <div class="review-rating mb-2">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <h6 class="review-title">Saved us from a major disaster</h6>
+                                                <p class="review-text">We had a pipe burst in the middle of the night, and John responded to our emergency call right away. He arrived within 30 minutes and quickly stopped the water damage from getting worse. He then repaired the pipe and made sure everything was working properly. His emergency service fee was reasonable considering the time and urgency. Highly recommend!</p>
+                                                <div class="review-service text-muted">Service: Emergency Pipe Repair</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Load More Button -->
+                                        <div class="text-center mt-4">
+                                            <button class="btn btn-outline-primary">Load More Reviews</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Availability Tab -->
+                                <div class="tab-pane fade" id="availability" role="tabpanel" aria-labelledby="availability-tab">
+                                    <h3 class="mb-4">Check Availability & Book</h3>
+                                    <p class="mb-4">Select a date and time to book an appointment with John. Available time slots are shown in green.</p>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <div class="calendar-container mb-4">
+                                                <!-- Calendar would be implemented with JavaScript -->
+                                                <div class="calendar-header d-flex justify-content-between align-items-center mb-3">
+                                                    <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-chevron-left"></i></button>
+                                                    <h5 class="mb-0">June 2023</h5>
+                                                    <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-chevron-right"></i></button>
+                                                </div>
+                                                <table class="table table-bordered calendar">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Sun</th>
+                                                            <th>Mon</th>
+                                                            <th>Tue</th>
+                                                            <th>Wed</th>
+                                                            <th>Thu</th>
+                                                            <th>Fri</th>
+                                                            <th>Sat</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-muted">28</td>
+                                                            <td class="text-muted">29</td>
+                                                            <td class="text-muted">30</td>
+                                                            <td class="text-muted">31</td>
+                                                            <td>1</td>
+                                                            <td>2</td>
+                                                            <td>3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>5</td>
+                                                            <td>6</td>
+                                                            <td>7</td>
+                                                            <td>8</td>
+                                                            <td>9</td>
+                                                            <td>10</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>11</td>
+                                                            <td>12</td>
+                                                            <td class="today">13</td>
+                                                            <td class="available">14</td>
+                                                            <td class="available">15</td>
+                                                            <td class="available">16</td>
+                                                            <td class="available">17</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>18</td>
+                                                            <td class="available">19</td>
+                                                            <td class="available">20</td>
+                                                            <td class="available">21</td>
+                                                            <td class="available">22</td>
+                                                            <td class="available">23</td>
+                                                            <td class="available">24</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>25</td>
+                                                            <td class="available">26</td>
+                                                            <td class="available">27</td>
+                                                            <td class="available">28</td>
+                                                            <td class="available">29</td>
+                                                            <td class="available">30</td>
+                                                            <td class="text-muted">1</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="calendar-legend d-flex justify-content-center mt-2">
+                                                    <div class="me-3"><span class="legend-box today-box"></span> Today</div>
+                                                    <div class="me-3"><span class="legend-box available-box"></span> Available</div>
+                                                    <div><span class="legend-box booked-box"></span> Booked</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-5">
+                                            <div class="time-slots-container">
+                                                <h5 class="mb-3">Available Time Slots for June 15, 2023</h5>
+                                                <div class="time-slots">
+                                                    <button class="btn btn-outline-primary time-slot">8:00 AM</button>
+                                                    <button class="btn btn-outline-primary time-slot">9:30 AM</button>
+                                                    <button class="btn btn-outline-primary time-slot">11:00 AM</button>
+                                                    <button class="btn btn-outline-primary time-slot">1:30 PM</button>
+                                                    <button class="btn btn-outline-primary time-slot">3:00 PM</button>
+                                                    <button class="btn btn-outline-primary time-slot">4:30 PM</button>
+                                                </div>
+                                                <div class="mt-4">
+                                                    <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                                                        Book Appointment
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="availability-info mt-4">
+                                        <h5>Regular Availability</h5>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th>Day</th>
+                                                        <th>Hours</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Monday - Friday</td>
+                                                        <td>8:00 AM - 6:00 PM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Saturday</td>
+                                                        <td>9:00 AM - 3:00 PM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sunday</td>
+                                                        <td>Emergency Services Only</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p class="mt-3"><i class="fas fa-info-circle text-primary me-2"></i> Emergency services are available 24/7 with an additional fee.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Similar Providers -->
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Similar Providers Nearby</h3>
+                            <div class="row">
+                                <!-- Similar Provider 1 -->
+                                <div class="col-md-6 mb-3">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-220453-2.jpeg" alt="Provider" class="similar-provider-img me-3">
+                                                <div>
+                                                    <h5 class="mb-1">Robert Davis</h5>
+                                                    <p class="text-muted mb-1">Plumber</p>
+                                                    <div class="provider-rating small">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <span class="ms-1">4.0 (87)</span>
+                                                    </div>
+                                                    <p class="mb-0 small"><i class="fas fa-map-marker-alt text-primary me-1"></i> 3.5 miles away</p>
+                                                </div>
+                                            </div>
+                                            <div class="mt-3 text-end">
+                                                <a href="provider-profile.html" class="btn btn-sm btn-outline-primary">View Profile</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Similar Provider 2 -->
+                                <div class="col-md-6 mb-3">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-774909-3.jpeg" alt="Provider" class="similar-provider-img me-3">
+                                                <div>
+                                                    <h5 class="mb-1">Jennifer Lopez</h5>
+                                                    <p class="text-muted mb-1">Plumber</p>
+                                                    <div class="provider-rating small">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                        <span class="ms-1">4.5 (112)</span>
+                                                    </div>
+                                                    <p class="mb-0 small"><i class="fas fa-map-marker-alt text-primary me-1"></i> 5.2 miles away</p>
+                                                </div>
+                                            </div>
+                                            <div class="mt-3 text-end">
+                                                <a href="provider-profile.html" class="btn btn-sm btn-outline-primary">View Profile</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">Book an Appointment with John Smith</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="booking-form" class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <!-- Service Selection -->
+                            <div class="col-12 mb-3">
+                                <label for="service-type" class="form-label">Service Type</label>
+                                <select class="form-select" id="service-type" required>
+                                    <option value="" selected disabled>Select a service</option>
+                                    <option value="drain-cleaning">Drain Cleaning</option>
+                                    <option value="pipe-repair">Pipe Repair</option>
+                                    <option value="water-heater-installation">Water Heater Installation</option>
+                                    <option value="water-heater-repair">Water Heater Repair</option>
+                                    <option value="faucet-installation">Faucet Installation</option>
+                                    <option value="toilet-repair">Toilet Repair/Replacement</option>
+                                    <option value="sump-pump">Sump Pump Installation</option>
+                                    <option value="emergency">Emergency Service</option>
+                                    <option value="other">Other (please specify)</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a service type.
+                                </div>
+                            </div>
+                            
+                            <div class="col-12 mb-3" id="other-service-container" style="display: none;">
+                                <label for="other-service" class="form-label">Specify Other Service</label>
+                                <input type="text" class="form-control" id="other-service">
+                            </div>
+                            
+                            <!-- Date and Time -->
+                            <div class="col-md-6 mb-3">
+                                <label for="appointment-date" class="form-label">Preferred Date</label>
+                                <input type="date" class="form-control" id="appointment-date" required>
+                                <div class="invalid-feedback">
+                                    Please select a date.
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="appointment-time" class="form-label">Preferred Time</label>
+                                <select class="form-select" id="appointment-time" required>
+                                    <option value="" selected disabled>Select a time</option>
+                                    <option value="8:00">8:00 AM</option>
+                                    <option value="9:30">9:30 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="13:30">1:30 PM</option>
+                                    <option value="15:00">3:00 PM</option>
+                                    <option value="16:30">4:30 PM</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a time.
+                                </div>
+                            </div>
+                            
+                            <!-- Contact Information -->
+                            <div class="col-md-6 mb-3">
+                                <label for="booking-name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="booking-name" required>
+                                <div class="invalid-feedback">
+                                    Please provide your name.
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="booking-phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="booking-phone" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid phone number.
+                                </div>
+                            </div>
+                            
+                            <div class="col-12 mb-3">
+                                <label for="booking-email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="booking-email" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid email address.
+                                </div>
+                            </div>
+                            
+                            <!-- Service Address -->
+                            <div class="col-12 mb-3">
+                                <label for="service-address" class="form-label">Service Address</label>
+                                <input type="text" class="form-control" id="service-address" required>
+                                <div class="invalid-feedback">
+                                    Please provide the service address.
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 mb-3">
+                                <label for="service-city" class="form-label">City</label>
+                                <input type="text" class="form-control" id="service-city" required>
+                                <div class="invalid-feedback">
+                                    Please provide the city.
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 mb-3">
+                                <label for="service-state" class="form-label">State</label>
+                                <select class="form-select" id="service-state" required>
+                                    <option value="" selected disabled>Select State</option>
+                                    <option value="IL">Illinois</option>
+                                    <!-- Add other states as needed -->
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a state.
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 mb-3">
+                                <label for="service-zip" class="form-label">Zip Code</label>
+                                <input type="text" class="form-control" id="service-zip" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid zip code.
+                                </div>
+                            </div>
+                            
+                            <!-- Service Details -->
+                            <div class="col-12 mb-3">
+                                <label for="service-details" class="form-label">Service Details</label>
+                                <textarea class="form-control" id="service-details" rows="3" placeholder="Please describe the issue or service needed in detail"></textarea>
+                            </div>
+                            
+                            <!-- Terms Agreement -->
+                            <div class="col-12 mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="terms-agree" required>
+                                    <label class="form-check-label" for="terms-agree">
+                                        I understand that this is a booking request and not a confirmed appointment. The service provider will contact me to confirm availability and provide a quote.
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree to the terms to continue.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="submit-booking">Submit Booking Request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Service Provider Platform</h5>
+                    <p>Connecting quality service providers with customers in need.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="services.html" class="text-white">Services</a></li>
+                        <li><a href="providers.html" class="text-white">Providers</a></li>
+                        <li><a href="the-confidentmindset.com/testimonials.html" class="text-white">Testimonials</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Service Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html#home-repair" class="text-white">Home Services</a></li>
+                        <li><a href="services.html#childcare" class="text-white">Childcare</a></li>
+                        <li><a href="services.html#cleaning" class="text-white">Cleaning</a></li>
+                        <li><a href="services.html#tutoring" class="text-white">Tutoring</a></li>
+                        <li><a href="services.html#landscaping" class="text-white">Landscaping</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Service St, City, Country</p>
+                        <p><i class="fas fa-phone me-2"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@serviceproviderplatform.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Service Provider Platform. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="privacy-policy.html" class="text-white me-3">Privacy Policy</a>
+                        <a href="terms-of-service.html" class="text-white">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        // Show/hide other service field based on selection
+        document.getElementById('service-type').addEventListener('change', function() {
+            const otherServiceContainer = document.getElementById('other-service-container');
+            if (this.value === 'other') {
+                otherServiceContainer.style.display = 'block';
+                document.getElementById('other-service').setAttribute('required', 'required');
+            } else {
+                otherServiceContainer.style.display = 'none';
+                document.getElementById('other-service').removeAttribute('required');
+            }
+        });
+
+        // Form validation
+        (function () {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+
+        // Handle booking submission
+        document.getElementById('submit-booking').addEventListener('click', function() {
+            const form = document.getElementById('booking-form');
+            if (form.checkValidity()) {
+                // Show success message
+                const modalBody = document.querySelector('.modal-body');
+                modalBody.innerHTML = `
+                    <div class="text-center py-4">
+                        <div class="mb-4">
+                            <i class="fas fa-check-circle text-success fa-5x"></i>
+                        </div>
+                        <h4>Booking Request Submitted!</h4>
+                        <p class="mb-4">Thank you for your booking request. John Smith will contact you shortly to confirm your appointment.</p>
+                        <p>A confirmation email has been sent to your email address.</p>
+                    </div>
+                `;
+                document.querySelector('.modal-footer').innerHTML = `
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                `;
+            } else {
+                form.classList.add('was-validated');
+            }
+        });
+
+        // Calendar date selection (simplified for demo)
+        document.querySelectorAll('.calendar td:not(.text-muted)').forEach(cell => {
+            cell.addEventListener('click', function() {
+                document.querySelectorAll('.calendar td').forEach(td => td.classList.remove('selected'));
+                this.classList.add('selected');
+                // In a real implementation, this would update the available time slots
+            });
+        });
+
+        // Time slot selection
+        document.querySelectorAll('.time-slot').forEach(slot => {
+            slot.addEventListener('click', function() {
+                document.querySelectorAll('.time-slot').forEach(s => s.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Providers | Service Provider Platform</title>
+    <link rel="shortcut icon" href="https://the-confidentmindset.com/hubfs/Screenshot%202023-11-27%20at%2019.14.06-1.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- HubSpot Script Loader -->
+    <script src="./the-confidentmindset.com/hs/scriptloader/9082919.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="c:\Users\HP\Desktop\Images\Logo.PNG"  height="40">
+                Service Provider Platform
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="providers.html">Find Providers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white ms-2" href="login.html">Login / Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-primary text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4">Find Service Providers</h1>
+            <p class="lead">Discover qualified professionals in your area</p>
+        </div>
+    </header>
+
+    <!-- Search and Filter Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3 class="card-title text-center mb-4">Search for Providers</h3>
+                            <form id="provider-search-form" class="row g-3">
+                                <div class="col-md-4">
+                                    <label for="service-type" class="form-label">Service Type</label>
+                                    <select id="service-type" class="form-select">
+                                        <option value="">All Services</option>
+                                        <option value="plumbing">Plumbing</option>
+                                        <option value="electrical">Electrical</option>
+                                        <option value="hvac">HVAC</option>
+                                        <option value="carpentry">Carpentry</option>
+                                        <option value="painting">Painting</option>
+                                        <option value="babysitting">Babysitting</option>
+                                        <option value="nanny">Nanny</option>
+                                        <option value="house-cleaning">House Cleaning</option>
+                                        <option value="lawn-care">Lawn Care</option>
+                                        <option value="tutoring">Tutoring</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="location" class="form-label">Location</label>
+                                    <input type="text" class="form-control" id="location" placeholder="City, State or Zip Code">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="radius" class="form-label">Radius</label>
+                                    <select id="radius" class="form-select">
+                                        <option value="5">5 miles</option>
+                                        <option value="10" selected>10 miles</option>
+                                        <option value="25">25 miles</option>
+                                        <option value="50">50 miles</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2 d-flex align-items-end">
+                                    <button type="submit" class="btn btn-primary w-100">Search</button>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="available-now">
+                                                <label class="form-check-label" for="available-now">Available Now</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="top-rated">
+                                                <label class="form-check-label" for="top-rated">Top Rated (4+)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="verified">
+                                                <label class="form-check-label" for="verified">Verified Providers</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="background-checked">
+                                                <label class="form-check-label" for="background-checked">Background Checked</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Provider Listings -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h2>Service Providers</h2>
+                    <p class="text-muted"><span id="result-count">24</span> providers found</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-secondary active">Grid</button>
+                        <button type="button" class="btn btn-outline-secondary">List</button>
+                    </div>
+                    <select class="form-select d-inline-block ms-2" style="width: auto;">
+                        <option selected>Sort by: Recommended</option>
+                        <option>Highest Rated</option>
+                        <option>Most Reviews</option>
+                        <option>Nearest</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Provider Grid -->
+            <div class="row g-4">
+                <!-- Provider 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card provider-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-220453-2.jpeg" alt="John Smith" class="provider-avatar">
+                                <div class="ms-3">
+                                    <h3 class="card-title mb-0">John Smith</h3>
+                                    <p class="text-muted mb-0">Plumber</p>
+                                </div>
+                                <div class="ms-auto">
+                                    <span class="badge bg-success">Available</span>
+                                </div>
+                            </div>
+                            <div class="provider-rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                                <span class="ms-1">4.5 (128 reviews)</span>
+                            </div>
+                            <p class="card-text">Professional plumber with over 15 years of experience in residential and commercial plumbing services.</p>
+                            <div class="provider-badges mb-3">
+                                <span class="badge rounded-pill bg-light text-dark me-1"><i class="fas fa-check-circle text-success me-1"></i> Verified</span>
+                                <span class="badge rounded-pill bg-light text-dark me-1"><i class="fas fa-shield-alt text-primary me-1"></i> Background Check</span>
+                                <span class="badge rounded-pill bg-light text-dark"><i class="fas fa-award text-warning me-1"></i> Top Pro</span>
+                            </div>
+                            <div class="provider-location mb-3">
+                                <i class="fas fa-map-marker-alt text-danger me-1"></i> Chicago, IL (3.2 miles away)
+                            </div>
+                            <a href="provider-profile.html?id=1" class="btn btn-primary w-100">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Provider 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card provider-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-774909-3.jpeg" alt="Sarah Johnson" class="provider-avatar">
+                                <div class="ms-3">
+                                    <h3 class="card-title mb-0">Sarah Johnson</h3>
+                                    <p class="text-muted mb-0">Babysitter</p>
+                                </div>
+                                <div class="ms-auto">
+                                    <span class="badge bg-success">Available</span>
+                                </div>
+                            </div>
+                            <div class="provider-rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="ms-1">5.0 (87 reviews)</span>
+                            </div>
+                            <p class="card-text">Experienced babysitter with a degree in Early Childhood Education. CPR certified and great with children of all ages.</p>
+                            <div class="provider-badges mb-3">
+                                <span class="badge rounded-pill bg-light text-dark me-1"><i class="fas fa-check-circle text-success me-1"></i> Verified</span>
+                                <span class="badge rounded-pill bg-light text-dark me-1"><i class="fas fa-shield-alt text-primary me-1"></i> Background Check</span>
+                                <span class="badge rounded-pill bg-light text-dark"><i class="fas fa-award text-warning me-1"></i> Top Pro</span>
+                            </div>
+                            <div class="provider-location mb-3">
+                                <i class="fas fa-map-marker-alt text-danger me-1"></i> Chicago, IL (1.8 miles away)
+                            </div>
+                            <a href="provider-profile.html?id=2" class="btn btn-primary w-100">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Provider 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card provider-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-1222271-2.jpeg" alt="Michael Rodriguez" class="provider-avatar">
+                                <div class="ms-3">
+                                    <h3 class="card-title mb-0">Michael Rodriguez</h3>
+                                    <p class="text-muted mb-0">Electrician</p>
+                                </div>
+                                <div class="ms-auto">
+                                    <span class="badge bg-secondary">Booked</span>
+                                </div>
+                            </div>
+                            <div class="provider-rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                                <span class="ms-1">4.0 (56 reviews)</span>
+                            </div>
+                            <p class="card-text">Licensed electrician specializing in residential wiring, lighting installation, and electrical repairs.</p>
+                            <div class="provider-badges mb-3">
+                                <span class="badge rounded-pill bg-light text-dark me-1"><i class="fas fa-check-circle text-success me-1"></i> Verified</span>
+                                <span class="badge rounded-pill bg-light text-dark me-1"><i class="fas fa-shield-alt text-primary me-1"></i> Background Check</span>
+                            </div>
+                            <div class="provider-location mb-3">
+                                <i class="fas fa-map-marker-alt text-danger me-1"></i> Chicago, IL (5.7 miles away)
+                            </div>
+                            <a href="provider-profile.html?id=3" class="btn btn-primary w-100">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Provider 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card provider-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-415829-2.jpeg" alt="Emily Chen" class="provider-avatar">
+                                <div class="ms-3">
+                                    <h3 class="card-title mb-0">Emily Chen</h3>
+                                    <p class="text-muted mb-0">House Cleaner</p>
+                                </div>
+                                <div class="ms-auto">
+                                    <span class="badge bg-success">Available</span>
+                                </div>
+                            </div>
+                            <div class="provider-rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                                <span class="ms-1">4.7 (103 reviews)</span>
+                            </div>
+                            <p class="card-text">Detail-oriented house cleaner offering regular cleaning, deep cleaning, and move-in/move-out cleaning services.</p>
+                            <div class="provider-badges mb-3">
+                                <span class="badge rounded-pill bg-light text-dark me-1"><i class="fas fa-check-circle text-success me-1"></i> Verified</span>
+                                <span class="badge rounded-pill bg-light text-dark"><i class="fas fa-award text-warning me-1"></i> Top Pro</span>
+                            </div>
+                            <div class="provider-location mb-3">
+                                <i class="fas fa-map-marker-alt text-danger me-1"></i> Chicago, IL (2.5 miles away)
+                            </div>
+                            <a href="provider-profile.html?id=4" class="btn btn-primary w-100">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Provider 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card provider-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-1516680-1.jpeg" alt="David Wilson" class="provider-avatar">
+                                <div class="ms-3">
+                                    <h3 class="card-title mb-0">David Wilson</h3>
+                                    <p class="text-muted mb-0">Tutor</p>
+                                </div>
+                                <div class="ms-auto">
+                                    <span class="badge bg-success">Available</span>
+                                </div>
+                            </div>
+                            <div class="provider-rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="ms-1">4.9 (42 reviews)</span>
+                            </div>
+                            <p class="card-text">Math and science tutor with a PhD in Physics. Specializing in high school and college-level subjects.</p>
+                            <div class="provider-badges mb-3">
+                                <span class="badge rounded-pill bg-light text-dark me-1"><i class="fas fa-check-circle text-success me-1"></i> Verified</span>
+                                <span class="badge rounded-pill bg-light text-dark me-1"><i class="fas fa-shield-alt text-primary me-1"></i> Background Check</span>
+                                <span class="badge rounded-pill bg-light text-dark"><i class="fas fa-award text-warning me-1"></i> Top Pro</span>
+                            </div>
+                            <div class="provider-location mb-3">
+                                <i class="fas fa-map-marker-alt text-danger me-1"></i> Chicago, IL (4.1 miles away)
+                            </div>
+                            <a href="provider-profile.html?id=5" class="btn btn-primary w-100">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Provider 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card provider-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-1239291-4.jpeg" alt="Jessica Martinez" class="provider-avatar">
+                                <div class="ms-3">
+                                    <h3 class="card-title mb-0">Jessica Martinez</h3>
+                                    <p class="text-muted mb-0">Painter</p>
+                                </div>
+                                <div class="ms-auto">
+                                    <span class="badge bg-secondary">Booked</span>
+                                </div>
+                            </div>
+                            <div class="provider-rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                                <span class="ms-1">4.2 (35 reviews)</span>
+                            </div>
+                            <p class="card-text">Professional painter with expertise in interior and exterior painting, color consultation, and decorative finishes.</p>
+                            <div class="provider-badges mb-3">
+                                <span class="badge rounded-pill bg-light text-dark me-1"><i class="fas fa-check-circle text-success me-1"></i> Verified</span>
+                            </div>
+                            <div class="provider-location mb-3">
+                                <i class="fas fa-map-marker-alt text-danger me-1"></i> Chicago, IL (7.3 miles away)
+                            </div>
+                            <a href="provider-profile.html?id=6" class="btn btn-primary w-100">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="mt-5" aria-label="Provider pagination">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section py-5 bg-primary text-white text-center">
+        <div class="container">
+            <h2 class="mb-4">Are You a Service Provider?</h2>
+            <p class="lead mb-4">Join our platform to connect with customers in your area!</p>
+            <a href="register-provider.html" class="btn btn-light btn-lg">Register as Provider</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Service Provider Platform</h5>
+                    <p>Connecting quality service providers with customers in need.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="services.html" class="text-white">Services</a></li>
+                        <li><a href="providers.html" class="text-white">Providers</a></li>
+                        <li><a href="the-confidentmindset.com/testimonials.html" class="text-white">Testimonials</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Service Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html#home-repair" class="text-white">Home Services</a></li>
+                        <li><a href="services.html#childcare" class="text-white">Childcare</a></li>
+                        <li><a href="services.html#cleaning" class="text-white">Cleaning</a></li>
+                        <li><a href="services.html#tutoring" class="text-white">Tutoring</a></li>
+                        <li><a href="services.html#landscaping" class="text-white">Landscaping</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Service St, City, Country</p>
+                        <p><i class="fas fa-phone me-2"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@serviceproviderplatform.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Service Provider Platform. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="privacy-policy.html" class="text-white me-3">Privacy Policy</a>
+                        <a href="terms-of-service.html" class="text-white">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

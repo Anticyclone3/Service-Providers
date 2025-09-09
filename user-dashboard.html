@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard | Service Provider Platform</title>
+    <link rel="shortcut icon" href="https://the-confidentmindset.com/hubfs/Screenshot%202023-11-27%20at%2019.14.06-1.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- HubSpot Script Loader -->
+    <script src="./the-confidentmindset.com/hs/scriptloader/9082919.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="c:\Users\HP\Desktop\Images\Logo.PNG"  height="40">
+                Service Provider Platform
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="providers.html">Find Providers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="the-confidentmindset.com/testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-774909-3.jpeg" alt="User" class="user-avatar-small me-1"> Emily Parker
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item active" href="user-dashboard.html"><i class="fas fa-tachometer-alt me-2"></i> Dashboard</a></li>
+                            <li><a class="dropdown-item" href="user-dashboard.html?tab=profile"><i class="fas fa-user me-2"></i> My Profile</a></li>
+                            <li><a class="dropdown-item" href="user-dashboard.html?tab=bookings"><i class="fas fa-calendar-check me-2"></i> My Bookings</a></li>
+                            <li><a class="dropdown-item" href="user-dashboard.html?tab=favorites"><i class="fas fa-heart me-2"></i> Favorites</a></li>
+                            <li><a class="dropdown-item" href="user-dashboard.html?tab=messages"><i class="fas fa-envelope me-2"></i> Messages</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="index.html"><i class="fas fa-sign-out-alt me-2"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-lg-3 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center py-5">
+                            <div class="user-avatar-container mb-3">
+                                <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-774909-3.jpeg" alt="User" class="user-avatar-large">
+                            </div>
+                            <h4 class="mb-1">Emily Parker</h4>
+                            <p class="text-muted mb-3">Member since June 2023</p>
+                            <div class="d-grid">
+                                <a href="user-dashboard.html?tab=profile" class="btn btn-outline-primary"><i class="fas fa-edit me-2"></i> Edit Profile</a>
+                            </div>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <a href="user-dashboard.html" class="list-group-item list-group-item-action active">
+                                <i class="fas fa-tachometer-alt me-2"></i> Dashboard
+                            </a>
+                            <a href="user-dashboard.html?tab=profile" class="list-group-item list-group-item-action">
+                                <i class="fas fa-user me-2"></i> My Profile
+                            </a>
+                            <a href="user-dashboard.html?tab=bookings" class="list-group-item list-group-item-action">
+                                <i class="fas fa-calendar-check me-2"></i> My Bookings
+                                <span class="badge bg-primary rounded-pill float-end">3</span>
+                            </a>
+                            <a href="user-dashboard.html?tab=favorites" class="list-group-item list-group-item-action">
+                                <i class="fas fa-heart me-2"></i> Favorites
+                                <span class="badge bg-primary rounded-pill float-end">5</span>
+                            </a>
+                            <a href="user-dashboard.html?tab=messages" class="list-group-item list-group-item-action">
+                                <i class="fas fa-envelope me-2"></i> Messages
+                                <span class="badge bg-danger rounded-pill float-end">2</span>
+                            </a>
+                            <a href="user-dashboard.html?tab=payments" class="list-group-item list-group-item-action">
+                                <i class="fas fa-credit-card me-2"></i> Payment Methods
+                            </a>
+                            <a href="user-dashboard.html?tab=settings" class="list-group-item list-group-item-action">
+                                <i class="fas fa-cog me-2"></i> Account Settings
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <a href="index.html" class="btn btn-outline-danger w-100"><i class="fas fa-sign-out-alt me-2"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="col-lg-9">
+                    <!-- Dashboard Overview Tab -->
+                    <div class="tab-pane fade show active" id="dashboard-tab">
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Welcome back, Emily!</h2>
+                                        <p class="card-text">Here's an overview of your upcoming appointments and recent activity.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Stats Cards -->
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <h6 class="text-muted mb-1">Upcoming Appointments</h6>
+                                                <h3 class="mb-0">3</h3>
+                                            </div>
+                                            <div class="stats-icon bg-primary-light">
+                                                <i class="fas fa-calendar-alt text-primary"></i>
+                                            </div>
+                                        </div>
+                                        <p class="mt-3 mb-0"><a href="user-dashboard.html?tab=bookings" class="text-decoration-none">View details <i class="fas fa-arrow-right ms-1"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <h6 class="text-muted mb-1">Favorite Providers</h6>
+                                                <h3 class="mb-0">5</h3>
+                                            </div>
+                                            <div class="stats-icon bg-danger-light">
+                                                <i class="fas fa-heart text-danger"></i>
+                                            </div>
+                                        </div>
+                                        <p class="mt-3 mb-0"><a href="user-dashboard.html?tab=favorites" class="text-decoration-none">View favorites <i class="fas fa-arrow-right ms-1"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <h6 class="text-muted mb-1">Unread Messages</h6>
+                                                <h3 class="mb-0">2</h3>
+                                            </div>
+                                            <div class="stats-icon bg-warning-light">
+                                                <i class="fas fa-envelope text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <p class="mt-3 mb-0"><a href="user-dashboard.html?tab=messages" class="text-decoration-none">View messages <i class="fas fa-arrow-right ms-1"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Upcoming Appointments -->
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-header bg-white">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="mb-0">Upcoming Appointments</h5>
+                                    <a href="user-dashboard.html?tab=bookings" class="btn btn-sm btn-outline-primary">View All</a>
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table table-hover mb-0">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Date & Time</th>
+                                                <th>Provider</th>
+                                                <th>Service</th>
+                                                <th>Status</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Today, 3:00 PM</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-1516680-1.jpeg" alt="Provider" class="provider-avatar-small me-2">
+                                                        <div>
+                                                            <h6 class="mb-0">John Smith</h6>
+                                                            <small class="text-muted">Plumber</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Toilet Repair</td>
+                                                <td><span class="badge bg-success">Confirmed</span></td>
+                                                <td>
+                                                    <div class="btn-group btn-group-sm">
+                                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#viewAppointmentModal"><i class="fas fa-eye"></i></button>
+                                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#messageProviderModal"><i class="fas fa-comment"></i></button>
+                                                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#cancelAppointmentModal"><i class="fas fa-times"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tomorrow, 10:00 AM</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-220453-2.jpeg" alt="Provider" class="provider-avatar-small me-2">
+                                                        <div>
+                                                            <h6 class="mb-0">David Thompson</h6>
+                                                            <small class="text-muted">Electrician</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Light Fixture Installation</td>
+                                                <td><span class="badge bg-success">Confirmed</span></td>
+                                                <td>
+                                                    <div class="btn-group btn-group-sm">
+                                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#viewAppointmentModal"><i class="fas fa-eye"></i></button>
+                                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#messageProviderModal"><i class="fas fa-comment"></i></button>
+                                                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#cancelAppointmentModal"><i class="fas fa-times"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>June 18, 2:30 PM</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-774909-3.jpeg" alt="Provider" class="provider-avatar-small me-2">
+                                                        <div>
+                                                            <h6 class="mb-0">Sarah Williams</h6>
+                                                            <small class="text-muted">House Cleaner</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Deep House Cleaning</td>
+                                                <td><span class="badge bg-success">Confirmed</span></td>
+                                                <td>
+                                                    <div class="btn-group btn-group-sm">
+                                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#viewAppointmentModal"><i class="fas fa-eye"></i></button>
+                                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#messageProviderModal"><i class="fas fa-comment"></i></button>
+                                                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#cancelAppointmentModal"><i class="fas fa-times"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Recent Activity & Favorite Providers -->
+                        <div class="row">
+                            <!-- Recent Activity -->
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-header bg-white">
+                                        <h5 class="mb-0">Recent Activity</h5>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <div class="list-group list-group-flush">
+                                            <div class="list-group-item">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h6 class="mb-1">Booking Confirmed</h6>
+                                                    <small class="text-muted">2 hours ago</small>
+                                                </div>
+                                                <p class="mb-1">Your appointment with David Thompson for Light Fixture Installation has been confirmed.</p>
+                                                <small class="text-muted"><a href="user-dashboard.html?tab=bookings">View booking details</a></small>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h6 class="mb-1">Service Completed</h6>
+                                                    <small class="text-muted">Yesterday</small>
+                                                </div>
+                                                <p class="mb-1">John Smith completed the Sink Repair service. Please leave a review.</p>
+                                                <small class="text-muted"><a href="#" data-bs-toggle="modal" data-bs-target="#leaveReviewModal">Leave a review</a></small>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h6 class="mb-1">New Message</h6>
+                                                    <small class="text-muted">2 days ago</small>
+                                                </div>
+                                                <p class="mb-1">You received a message from Sarah Williams regarding your upcoming appointment.</p>
+                                                <small class="text-muted"><a href="user-dashboard.html?tab=messages">View message</a></small>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h6 class="mb-1">Provider Added to Favorites</h6>
+                                                    <small class="text-muted">3 days ago</small>
+                                                </div>
+                                                <p class="mb-1">You added John Smith to your favorite providers list.</p>
+                                                <small class="text-muted"><a href="user-dashboard.html?tab=favorites">View favorites</a></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Favorite Providers -->
+                            <div class="col-lg-6">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-header bg-white">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h5 class="mb-0">Favorite Providers</h5>
+                                            <a href="user-dashboard.html?tab=favorites" class="btn btn-sm btn-outline-primary">View All</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <div class="list-group list-group-flush">
+                                            <div class="list-group-item">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-1516680-1.jpeg" alt="Provider" class="provider-avatar me-3">
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex justify-content-between align-items-center mb-1">
+                                                            <h6 class="mb-0">John Smith</h6>
+                                                            <div class="provider-rating small">
+                                                                <span class="stars">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star-half-alt"></i>
+                                                                </span>
+                                                                <span class="rating-value">4.7</span>
+                                                            </div>
+                                                        </div>
+                                                        <p class="mb-2 text-muted small">Professional Plumber</p>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <div>
+                                                                <span class="badge bg-success me-1"><i class="fas fa-check-circle"></i> Verified</span>
+                                                                <span class="badge bg-info"><i class="fas fa-shield-alt"></i> Background Checked</span>
+                                                            </div>
+                                                            <div>
+                                                                <a href="provider-profile.html" class="btn btn-sm btn-outline-primary">View Profile</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-220453-2.jpeg" alt="Provider" class="provider-avatar me-3">
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex justify-content-between align-items-center mb-1">
+                                                            <h6 class="mb-0">David Thompson</h6>
+                                                            <div class="provider-rating small">
+                                                                <span class="stars">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                </span>
+                                                                <span class="rating-value">5.0</span>
+                                                            </div>
+                                                        </div>
+                                                        <p class="mb-2 text-muted small">Licensed Electrician</p>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <div>
+                                                                <span class="badge bg-success me-1"><i class="fas fa-check-circle"></i> Verified</span>
+                                                                <span class="badge bg-info"><i class="fas fa-shield-alt"></i> Background Checked</span>
+                                                            </div>
+                                                            <div>
+                                                                <a href="provider-profile.html" class="btn btn-sm btn-outline-primary">View Profile</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-774909-3.jpeg" alt="Provider" class="provider-avatar me-3">
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex justify-content-between align-items-center mb-1">
+                                                            <h6 class="mb-0">Sarah Williams</h6>
+                                                            <div class="provider-rating small">
+                                                                <span class="stars">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="far fa-star"></i>
+                                                                </span>
+                                                                <span class="rating-value">4.0</span>
+                                                            </div>
+                                                        </div>
+                                                        <p class="mb-2 text-muted small">Professional House Cleaner</p>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <div>
+                                                                <span class="badge bg-success me-1"><i class="fas fa-check-circle"></i> Verified</span>
+                                                                <span class="badge bg-info"><i class="fas fa-shield-alt"></i> Background Checked</span>
+                                                            </div>
+                                                            <div>
+                                                                <a href="provider-profile.html" class="btn btn-sm btn-outline-primary">View Profile</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- View Appointment Modal -->
+    <div class="modal fade" id="viewAppointmentModal" tabindex="-1" aria-labelledby="viewAppointmentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="viewAppointmentModalLabel">Appointment Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Provider Information</h6>
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-1516680-1.jpeg" alt="Provider" class="provider-avatar me-3">
+                                <div>
+                                    <h5 class="mb-0">John Smith</h5>
+                                    <p class="mb-0 text-muted">Professional Plumber</p>
+                                    <div class="provider-rating small">
+                                        <span class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </span>
+                                        <span class="rating-value">4.7</span>
+                                        <span class="rating-count">(124 reviews)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p><strong>Phone:</strong> (555) 123-4567</p>
+                            <p><strong>Email:</strong> john.smith@example.com</p>
+                            <p><strong>License:</strong> #PL12345</p>
+                            <p><strong>Verified:</strong> <i class="fas fa-check-circle text-success"></i> Yes</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Appointment Information</h6>
+                            <p><strong>Service:</strong> Toilet Repair</p>
+                            <p><strong>Date & Time:</strong> Today, 3:00 PM</p>
+                            <p><strong>Estimated Duration:</strong> 1-2 hours</p>
+                            <p><strong>Status:</strong> <span class="badge bg-success">Confirmed</span></p>
+                            <p><strong>Payment Method:</strong> Credit Card (Visa ending in 4567)</p>
+                            <p><strong>Estimated Price:</strong> $120</p>
+                            <p><strong>Location:</strong> Your Home Address</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12">
+                            <h6>Service Details</h6>
+                            <p>Toilet is running continuously and needs repair. The flush mechanism seems to be malfunctioning, and there's a slight leak at the base.</p>
+                            <h6 class="mt-3">Special Instructions</h6>
+                            <p>Please call when you're on your way. The bathroom is on the second floor, first door on the right.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#messageProviderModal">Message Provider</button>
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#rescheduleAppointmentModal">Reschedule</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#cancelAppointmentModal">Cancel Appointment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Provider Modal -->
+    <div class="modal fade" id="messageProviderModal" tabindex="-1" aria-labelledby="messageProviderModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="messageProviderModalLabel">Message Provider</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-1516680-1.jpeg" alt="Provider" class="provider-avatar-small me-2">
+                        <div>
+                            <h6 class="mb-0">John Smith</h6>
+                            <p class="mb-0 small text-muted">Toilet Repair - Today, 3:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-template" class="form-label">Message Template</label>
+                        <select class="form-select" id="message-template">
+                            <option value="" selected disabled>Select a template</option>
+                            <option value="additional-info">Provide Additional Information</option>
+                            <option value="reschedule-request">Request Reschedule</option>
+                            <option value="access-instructions">Access Instructions</option>
+                            <option value="custom">Custom Message</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="form-label">Message</label>
+                        <textarea class="form-control" id="message-text" rows="4">Hi John, I wanted to provide some additional information about the toilet repair. The issue started about a week ago, and it's getting worse. Please let me know if you need any specific tools or if there's anything I should prepare before your arrival. Thank you!</textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reschedule Appointment Modal -->
+    <div class="modal fade" id="rescheduleAppointmentModal" tabindex="-1" aria-labelledby="rescheduleAppointmentModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rescheduleAppointmentModalLabel">Reschedule Appointment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-info">
+                        <p class="mb-1"><strong>Current Appointment:</strong></p>
+                        <p class="mb-1">Service: Toilet Repair with John Smith</p>
+                        <p class="mb-0">Date & Time: Today, 3:00 PM</p>
+                    </div>
+                    <p>Please select a new date and time for your appointment:</p>
+                    <div class="mb-3">
+                        <label for="reschedule-date" class="form-label">New Date</label>
+                        <input type="date" class="form-control" id="reschedule-date" min="2023-06-16">
+                    </div>
+                    <div class="mb-3">
+                        <label for="reschedule-time" class="form-label">New Time</label>
+                        <select class="form-select" id="reschedule-time">
+                            <option value="" selected disabled>Select a time</option>
+                            <option value="09:00">9:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="13:00">1:00 PM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                            <option value="17:00">5:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="reschedule-reason" class="form-label">Reason for Rescheduling</label>
+                        <select class="form-select" id="reschedule-reason">
+                            <option value="" selected disabled>Select a reason</option>
+                            <option value="schedule-conflict">Schedule Conflict</option>
+                            <option value="emergency">Personal Emergency</option>
+                            <option value="not-ready">Not Ready for Service</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="reschedule-notes" class="form-label">Additional Notes (Optional)</label>
+                        <textarea class="form-control" id="reschedule-notes" rows="3" placeholder="Please provide any additional information about your rescheduling request"></textarea>
+                    </div>
+                    <div class="alert alert-warning">
+                        <p class="mb-0"><i class="fas fa-exclamation-triangle me-2"></i> Rescheduling with less than 24 hours notice may incur a fee as per the provider's policy.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Request Reschedule</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cancel Appointment Modal -->
+    <div class="modal fade" id="cancelAppointmentModal" tabindex="-1" aria-labelledby="cancelAppointmentModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cancelAppointmentModalLabel">Cancel Appointment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger">
+                        <p class="mb-0"><i class="fas fa-exclamation-circle me-2"></i> You are about to cancel the following appointment:</p>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <p class="mb-1"><strong>Service:</strong> Toilet Repair</p>
+                            <p class="mb-1"><strong>Provider:</strong> John Smith</p>
+                            <p class="mb-1"><strong>Date & Time:</strong> Today, 3:00 PM</p>
+                            <p class="mb-0"><strong>Estimated Price:</strong> $120</p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cancel-reason" class="form-label">Reason for Cancellation</label>
+                        <select class="form-select" id="cancel-reason" required>
+                            <option value="" selected disabled>Select a reason</option>
+                            <option value="schedule-conflict">Schedule Conflict</option>
+                            <option value="found-alternative">Found Alternative Provider</option>
+                            <option value="no-longer-needed">Service No Longer Needed</option>
+                            <option value="emergency">Personal Emergency</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cancel-notes" class="form-label">Additional Notes (Optional)</label>
+                        <textarea class="form-control" id="cancel-notes" rows="3" placeholder="Please provide any additional information about your cancellation"></textarea>
+                    </div>
+                    <div class="alert alert-warning">
+                        <p class="mb-0"><i class="fas fa-exclamation-triangle me-2"></i> Cancelling with less than 24 hours notice may incur a cancellation fee as per the provider's policy.</p>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="cancel-confirm-check" required>
+                        <label class="form-check-label" for="cancel-confirm-check">
+                            I understand that this cancellation cannot be undone and may be subject to the provider's cancellation policy.
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+                    <button type="button" class="btn btn-danger" id="confirm-cancel-btn" disabled>Cancel Appointment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leave Review Modal -->
+    <div class="modal fade" id="leaveReviewModal" tabindex="-1" aria-labelledby="leaveReviewModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="leaveReviewModalLabel">Leave a Review</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-1516680-1.jpeg" alt="Provider" class="provider-avatar-small me-2">
+                        <div>
+                            <h6 class="mb-0">John Smith</h6>
+                            <p class="mb-0 small text-muted">Sink Repair - Completed Yesterday</p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Rating</label>
+                        <div class="rating-input">
+                            <i class="far fa-star fa-2x" data-rating="1"></i>
+                            <i class="far fa-star fa-2x" data-rating="2"></i>
+                            <i class="far fa-star fa-2x" data-rating="3"></i>
+                            <i class="far fa-star fa-2x" data-rating="4"></i>
+                            <i class="far fa-star fa-2x" data-rating="5"></i>
+                        </div>
+                        <input type="hidden" id="rating-value" value="0">
+                    </div>
+                    <div class="mb-3">
+                        <label for="review-title" class="form-label">Review Title</label>
+                        <input type="text" class="form-control" id="review-title" placeholder="Summarize your experience">
+                    </div>
+                    <div class="mb-3">
+                        <label for="review-text" class="form-label">Your Review</label>
+                        <textarea class="form-control" id="review-text" rows="4" placeholder="Share details of your experience with this provider"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">What did you like?</label>
+                        <div class="d-flex flex-wrap gap-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="like-punctuality">
+                                <label class="form-check-label" for="like-punctuality">Punctuality</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="like-professionalism">
+                                <label class="form-check-label" for="like-professionalism">Professionalism</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="like-quality">
+                                <label class="form-check-label" for="like-quality">Quality of Work</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="like-value">
+                                <label class="form-check-label" for="like-value">Value for Money</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="like-communication">
+                                <label class="form-check-label" for="like-communication">Communication</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="review-photos" class="form-label">Add Photos (Optional)</label>
+                        <input type="file" class="form-control" id="review-photos" multiple accept="image/*">
+                        <div class="form-text">You can upload up to 3 photos</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="submit-review-btn">Submit Review</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Service Provider Platform</h5>
+                    <p>Connecting quality service providers with customers in need.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="services.html" class="text-white">Services</a></li>
+                        <li><a href="providers.html" class="text-white">Providers</a></li>
+                        <li><a href="the-confidentmindset.com/testimonials.html" class="text-white">Testimonials</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Provider Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">How It Works</a></li>
+                        <li><a href="#" class="text-white">Success Stories</a></li>
+                        <li><a href="#" class="text-white">Provider Guidelines</a></li>
+                        <li><a href="#" class="text-white">Support Center</a></li>
+                        <li><a href="register-provider.html" class="text-white">Become a Provider</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Service St, City, Country</p>
+                        <p><i class="fas fa-phone me-2"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@serviceproviderplatform.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Service Provider Platform. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="privacy-policy.html" class="text-white me-3">Privacy Policy</a>
+                        <a href="terms-of-service.html" class="text-white">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        // Message template selection
+        document.getElementById('message-template').addEventListener('change', function() {
+            const messageText = document.getElementById('message-text');
+            const selectedTemplate = this.value;
+            
+            // Set predefined message based on template selection
+            switch(selectedTemplate) {
+                case 'additional-info':
+                    messageText.value = "Hi John, I wanted to provide some additional information about the toilet repair. The issue started about a week ago, and it's getting worse. Please let me know if you need any specific tools or if there's anything I should prepare before your arrival. Thank you!";
+                    break;
+                case 'reschedule-request':
+                    messageText.value = "Hi John, I need to reschedule our appointment for the toilet repair due to an unexpected conflict. Would it be possible to move it to tomorrow at the same time? I apologize for any inconvenience this may cause.";
+                    break;
+                case 'access-instructions':
+                    messageText.value = "Hi John, I wanted to provide access instructions for your visit today. The front door code is 1234. Once inside, the bathroom is upstairs, first door on the right. I'll be home during your visit, but if you arrive and I don't answer immediately, please call my cell.";
+                    break;
+                case 'custom':
+                    messageText.value = "";
+                    break;
+            }
+        });
+
+        // Cancel appointment confirmation
+        document.getElementById('cancel-confirm-check').addEventListener('change', function() {
+            document.getElementById('confirm-cancel-btn').disabled = !this.checked;
+        });
+
+        // Rating system for reviews
+        document.querySelectorAll('.rating-input i').forEach(star => {
+            star.addEventListener('mouseover', function() {
+                const rating = parseInt(this.getAttribute('data-rating'));
+                highlightStars(rating);
+            });
+
+            star.addEventListener('mouseout', function() {
+                const currentRating = parseInt(document.getElementById('rating-value').value);
+                highlightStars(currentRating);
+            });
+
+            star.addEventListener('click', function() {
+                const rating = parseInt(this.getAttribute('data-rating'));
+                document.getElementById('rating-value').value = rating;
+                highlightStars(rating);
+            });
+        });
+
+        function highlightStars(rating) {
+            document.querySelectorAll('.rating-input i').forEach(star => {
+                const starRating = parseInt(star.getAttribute('data-rating'));
+                if (starRating <= rating) {
+                    star.classList.remove('far');
+                    star.classList.add('fas');
+                    star.classList.add('text-warning');
+                } else {
+                    star.classList.remove('fas');
+                    star.classList.remove('text-warning');
+                    star.classList.add('far');
+                }
+            });
+        }
+
+        // Submit review button
+        document.getElementById('submit-review-btn').addEventListener('click', function() {
+            const rating = document.getElementById('rating-value').value;
+            const title = document.getElementById('review-title').value;
+            const text = document.getElementById('review-text').value;
+            
+            if (rating === '0') {
+                alert('Please select a rating');
+                return;
+            }
+            
+            if (!title.trim()) {
+                alert('Please enter a review title');
+                return;
+            }
+            
+            if (!text.trim()) {
+                alert('Please enter your review');
+                return;
+            }
+            
+            // Show success message
+            const modalBody = document.querySelector('#leaveReviewModal .modal-body');
+            modalBody.innerHTML = `
+                <div class="text-center py-4">
+                    <div class="mb-4">
+                        <i class="fas fa-check-circle text-success fa-5x"></i>
+                    </div>
+                    <h4>Thank You for Your Review!</h4>
+                    <p class="mb-4">Your feedback has been submitted successfully.</p>
+                    <p>Your review will be visible on John Smith's profile after moderation.</p>
+                </div>
+            `;
+            document.querySelector('#leaveReviewModal .modal-footer').innerHTML = `
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            `;
+        });
+
+        // Tab switching based on URL parameter
+        document.addEventListener('DOMContentLoaded', function() {
+            // This would be implemented with actual tab switching logic
+            // For demonstration purposes only
+            const urlParams = new URLSearchParams(window.location.search);
+            const tab = urlParams.get('tab');
+            if (tab) {
+                // Activate the corresponding tab
+                document.querySelectorAll('.list-group-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                const activeTab = document.querySelector(`.list-group-item[href="user-dashboard.html?tab=${tab}"]`);
+                if (activeTab) {
+                    activeTab.classList.add('active');
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provider Dashboard | Service Provider Platform</title>
+    <link rel="shortcut icon" href="https://the-confidentmindset.com/hubfs/Screenshot%202023-11-27%20at%2019.14.06-1.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- HubSpot Script Loader -->
+    <script src="./the-confidentmindset.com/hs/scriptloader/9082919.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                 <img src="c:\Users\HP\Desktop\Images\Logo.PNG"  height="40">
+                Service Provider Platform
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="providers.html">Find Providers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="the-confidentmindset.com/testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-1516680-1.jpeg" alt="Provider" class="user-avatar-small me-1"> John Smith
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item active" href="provider-dashboard.html"><i class="fas fa-tachometer-alt me-2"></i> Dashboard</a></li>
+                            <li><a class="dropdown-item" href="provider-dashboard.html?tab=profile"><i class="fas fa-user me-2"></i> My Profile</a></li>
+                            <li><a class="dropdown-item" href="provider-dashboard.html?tab=services"><i class="fas fa-tools me-2"></i> My Services</a></li>
+                            <li><a class="dropdown-item" href="provider-dashboard.html?tab=bookings"><i class="fas fa-calendar-check me-2"></i> Bookings</a></li>
+                            <li><a class="dropdown-item" href="provider-dashboard.html?tab=reviews"><i class="fas fa-star me-2"></i> Reviews</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="index.html"><i class="fas fa-sign-out-alt me-2"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-lg-3 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center py-5">
+                            <div class="user-avatar-container mb-3">
+                                <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-1516680-1.jpeg" alt="Provider" class="user-avatar-large">
+                                <div class="provider-badges position-absolute bottom-0 end-0">
+                                    <span class="badge bg-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                            </div>
+                            <h4 class="mb-1">John Smith</h4>
+                            <p class="text-muted mb-1">Professional Plumber</p>
+                            <div class="provider-rating mb-3">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                                <span class="rating-value">4.7</span>
+                                <span class="rating-count">(124)</span>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <a href="provider-dashboard.html?tab=profile" class="btn btn-outline-primary"><i class="fas fa-edit me-2"></i> Edit Profile</a>
+                                <a href="provider-profile.html" class="btn btn-outline-secondary"><i class="fas fa-eye me-2"></i> View Public Profile</a>
+                            </div>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <a href="provider-dashboard.html" class="list-group-item list-group-item-action active">
+                                <i class="fas fa-tachometer-alt me-2"></i> Dashboard
+                            </a>
+                            <a href="provider-dashboard.html?tab=profile" class="list-group-item list-group-item-action">
+                                <i class="fas fa-user me-2"></i> My Profile
+                            </a>
+                            <a href="provider-dashboard.html?tab=services" class="list-group-item list-group-item-action">
+                                <i class="fas fa-tools me-2"></i> My Services
+                            </a>
+                            <a href="provider-dashboard.html?tab=bookings" class="list-group-item list-group-item-action">
+                                <i class="fas fa-calendar-check me-2"></i> Bookings
+                                <span class="badge bg-primary rounded-pill float-end">5</span>
+                            </a>
+                            <a href="provider-dashboard.html?tab=availability" class="list-group-item list-group-item-action">
+                                <i class="fas fa-clock me-2"></i> Availability
+                            </a>
+                            <a href="provider-dashboard.html?tab=reviews" class="list-group-item list-group-item-action">
+                                <i class="fas fa-star me-2"></i> Reviews
+                                <span class="badge bg-primary rounded-pill float-end">124</span>
+                            </a>
+                            <a href="provider-dashboard.html?tab=messages" class="list-group-item list-group-item-action">
+                                <i class="fas fa-envelope me-2"></i> Messages
+                                <span class="badge bg-danger rounded-pill float-end">3</span>
+                            </a>
+                            <a href="provider-dashboard.html?tab=earnings" class="list-group-item list-group-item-action">
+                                <i class="fas fa-dollar-sign me-2"></i> Earnings
+                            </a>
+                            <a href="provider-dashboard.html?tab=settings" class="list-group-item list-group-item-action">
+                                <i class="fas fa-cog me-2"></i> Account Settings
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <a href="index.html" class="btn btn-outline-danger w-100"><i class="fas fa-sign-out-alt me-2"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="col-lg-9">
+                    <!-- Dashboard Overview Tab -->
+                    <div class="tab-pane fade show active" id="dashboard-tab">
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Welcome back, John!</h2>
+                                        <p class="card-text">Here's an overview of your business performance and upcoming appointments.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Stats Cards -->
+                        <div class="row mb-4">
+                            <div class="col-md-3 mb-3 mb-md-0">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <h6 class="text-muted mb-1">Today's Bookings</h6>
+                                                <h3 class="mb-0">2</h3>
+                                            </div>
+                                            <div class="stats-icon bg-primary-light">
+                                                <i class="fas fa-calendar-day text-primary"></i>
+                                            </div>
+                                        </div>
+                                        <p class="mt-3 mb-0"><a href="provider-dashboard.html?tab=bookings" class="text-decoration-none">View details <i class="fas fa-arrow-right ms-1"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3 mb-md-0">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <h6 class="text-muted mb-1">Pending Requests</h6>
+                                                <h3 class="mb-0">3</h3>
+                                            </div>
+                                            <div class="stats-icon bg-warning-light">
+                                                <i class="fas fa-clock text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <p class="mt-3 mb-0"><a href="provider-dashboard.html?tab=bookings" class="text-decoration-none">View details <i class="fas fa-arrow-right ms-1"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3 mb-md-0">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <h6 class="text-muted mb-1">New Messages</h6>
+                                                <h3 class="mb-0">3</h3>
+                                            </div>
+                                            <div class="stats-icon bg-danger-light">
+                                                <i class="fas fa-envelope text-danger"></i>
+                                            </div>
+                                        </div>
+                                        <p class="mt-3 mb-0"><a href="provider-dashboard.html?tab=messages" class="text-decoration-none">View messages <i class="fas fa-arrow-right ms-1"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <h6 class="text-muted mb-1">This Week's Earnings</h6>
+                                                <h3 class="mb-0">$875</h3>
+                                            </div>
+                                            <div class="stats-icon bg-success-light">
+                                                <i class="fas fa-dollar-sign text-success"></i>
+                                            </div>
+                                        </div>
+                                        <p class="mt-3 mb-0"><a href="provider-dashboard.html?tab=earnings" class="text-decoration-none">View earnings <i class="fas fa-arrow-right ms-1"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Performance Chart -->
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-header bg-white">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="mb-0">Performance Overview</h5>
+                                    <div class="btn-group btn-group-sm" role="group">
+                                        <button type="button" class="btn btn-outline-primary active">Weekly</button>
+                                        <button type="button" class="btn btn-outline-primary">Monthly</button>
+                                        <button type="button" class="btn btn-outline-primary">Yearly</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <!-- Chart would be implemented with JavaScript/Chart.js -->
+                                        <div class="chart-container" style="position: relative; height:300px;">
+                                            <!-- Placeholder for chart -->
+                                            <div class="placeholder-chart d-flex justify-content-center align-items-center h-100 border rounded">
+                                                <div class="text-center text-muted">
+                                                    <i class="fas fa-chart-line fa-3x mb-3"></i>
+                                                    <p>Performance chart showing bookings and earnings over time</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="stats-summary">
+                                            <h6 class="text-muted mb-4">Weekly Summary</h6>
+                                            <div class="mb-4">
+                                                <p class="mb-1 d-flex justify-content-between">
+                                                    <span>Total Bookings</span>
+                                                    <span class="fw-bold">12</span>
+                                                </p>
+                                                <div class="progress" style="height: 6px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <p class="text-muted small mt-1">+15% from last week</p>
+                                            </div>
+                                            <div class="mb-4">
+                                                <p class="mb-1 d-flex justify-content-between">
+                                                    <span>Completion Rate</span>
+                                                    <span class="fw-bold">95%</span>
+                                                </p>
+                                                <div class="progress" style="height: 6px;">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <p class="text-muted small mt-1">+2% from last week</p>
+                                            </div>
+                                            <div class="mb-4">
+                                                <p class="mb-1 d-flex justify-content-between">
+                                                    <span>Customer Satisfaction</span>
+                                                    <span class="fw-bold">4.7/5</span>
+                                                </p>
+                                                <div class="progress" style="height: 6px;">
+                                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <p class="text-muted small mt-1">Same as last week</p>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1 d-flex justify-content-between">
+                                                    <span>Total Revenue</span>
+                                                    <span class="fw-bold">$875</span>
+                                                </p>
+                                                <div class="progress" style="height: 6px;">
+                                                    <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <p class="text-muted small mt-1">+10% from last week</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Today's Schedule -->
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-header bg-white">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="mb-0">Today's Schedule</h5>
+                                    <a href="provider-dashboard.html?tab=bookings" class="btn btn-sm btn-outline-primary">View All Bookings</a>
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table table-hover mb-0">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Time</th>
+                                                <th>Customer</th>
+                                                <th>Service</th>
+                                                <th>Location</th>
+                                                <th>Status</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>9:30 AM</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-220453-2.jpeg" alt="Customer" class="customer-avatar-small me-2">
+                                                        <div>
+                                                            <h6 class="mb-0">Michael Johnson</h6>
+                                                            <small class="text-muted">First-time customer</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Pipe Repair</td>
+                                                <td>123 Main St, Chicago</td>
+                                                <td><span class="badge bg-success">Confirmed</span></td>
+                                                <td>
+                                                    <div class="btn-group btn-group-sm">
+                                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#viewBookingModal"><i class="fas fa-eye"></i></button>
+                                                        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#startServiceModal"><i class="fas fa-play"></i></button>
+                                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#messageCustomerModal"><i class="fas fa-comment"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1:30 PM</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-774909-3.jpeg" alt="Customer" class="customer-avatar-small me-2">
+                                                        <div>
+                                                            <h6 class="mb-0">Sarah Williams</h6>
+                                                            <small class="text-muted">Returning customer</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Water Heater Repair</td>
+                                                <td>456 Oak Ave, Evanston</td>
+                                                <td><span class="badge bg-success">Confirmed</span></td>
+                                                <td>
+                                                    <div class="btn-group btn-group-sm">
+                                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#viewBookingModal"><i class="fas fa-eye"></i></button>
+                                                        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#startServiceModal"><i class="fas fa-play"></i></button>
+                                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#messageCustomerModal"><i class="fas fa-comment"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="table-light">
+                                                <td colspan="6" class="text-center py-3">
+                                                    <p class="mb-0">No more appointments scheduled for today.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Recent Activity & Pending Requests -->
+                        <div class="row">
+                            <!-- Recent Activity -->
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-header bg-white">
+                                        <h5 class="mb-0">Recent Activity</h5>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <div class="list-group list-group-flush">
+                                            <div class="list-group-item">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h6 class="mb-1">New Review Received</h6>
+                                                    <small class="text-muted">1 hour ago</small>
+                                                </div>
+                                                <p class="mb-1">David Thompson left a 5-star review for your service.</p>
+                                                <small class="text-muted"><a href="provider-dashboard.html?tab=reviews">View review</a></small>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h6 class="mb-1">Service Completed</h6>
+                                                    <small class="text-muted">Yesterday</small>
+                                                </div>
+                                                <p class="mb-1">You marked the Toilet Repair service for Emily Parker as completed.</p>
+                                                <small class="text-muted">Payment of $125 has been processed</small>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h6 class="mb-1">New Booking Request</h6>
+                                                    <small class="text-muted">2 days ago</small>
+                                                </div>
+                                                <p class="mb-1">You received a new booking request from Michael Johnson for Pipe Repair.</p>
+                                                <small class="text-muted">You confirmed this request</small>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h6 class="mb-1">Profile Update</h6>
+                                                    <small class="text-muted">3 days ago</small>
+                                                </div>
+                                                <p class="mb-1">You updated your service pricing and availability.</p>
+                                                <small class="text-muted"><a href="provider-dashboard.html?tab=services">View services</a></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Pending Requests -->
+                            <div class="col-lg-6">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-header bg-white">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h5 class="mb-0">Pending Booking Requests</h5>
+                                            <a href="provider-dashboard.html?tab=bookings" class="btn btn-sm btn-outline-primary">View All</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <div class="list-group list-group-flush">
+                                            <div class="list-group-item">
+                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-1516680-1.jpeg" alt="Customer" class="customer-avatar-small me-2">
+                                                        <div>
+                                                            <h6 class="mb-0">James Wilson</h6>
+                                                            <small class="text-muted">Requested 5 hours ago</small>
+                                                        </div>
+                                                    </div>
+                                                    <span class="badge bg-warning text-dark">Pending</span>
+                                                </div>
+                                                <p class="mb-2"><strong>Service:</strong> Faucet Installation</p>
+                                                <p class="mb-2"><strong>Date/Time:</strong> June 16, 2023 at 11:00 AM</p>
+                                                <p class="mb-2"><strong>Location:</strong> 789 Pine St, Chicago</p>
+                                                <div class="d-flex justify-content-end mt-3">
+                                                    <button class="btn btn-sm btn-outline-danger me-2">Decline</button>
+                                                    <button class="btn btn-sm btn-success">Accept</button>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-220453-2.jpeg" alt="Customer" class="customer-avatar-small me-2">
+                                                        <div>
+                                                            <h6 class="mb-0">Robert Brown</h6>
+                                                            <small class="text-muted">Requested 1 day ago</small>
+                                                        </div>
+                                                    </div>
+                                                    <span class="badge bg-warning text-dark">Pending</span>
+                                                </div>
+                                                <p class="mb-2"><strong>Service:</strong> Drain Cleaning</p>
+                                                <p class="mb-2"><strong>Date/Time:</strong> June 17, 2023 at 9:00 AM</p>
+                                                <p class="mb-2"><strong>Location:</strong> 321 Elm St, Oak Park</p>
+                                                <div class="d-flex justify-content-end mt-3">
+                                                    <button class="btn btn-sm btn-outline-danger me-2">Decline</button>
+                                                    <button class="btn btn-sm btn-success">Accept</button>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-774909-3.jpeg" alt="Customer" class="customer-avatar-small me-2">
+                                                        <div>
+                                                            <h6 class="mb-0">Lisa Martinez</h6>
+                                                            <small class="text-muted">Requested 2 days ago</small>
+                                                        </div>
+                                                    </div>
+                                                    <span class="badge bg-warning text-dark">Pending</span>
+                                                </div>
+                                                <p class="mb-2"><strong>Service:</strong> Water Heater Installation</p>
+                                                <p class="mb-2"><strong>Date/Time:</strong> June 18, 2023 at 1:30 PM</p>
+                                                <p class="mb-2"><strong>Location:</strong> 567 Maple Ave, Skokie</p>
+                                                <div class="d-flex justify-content-end mt-3">
+                                                    <button class="btn btn-sm btn-outline-danger me-2">Decline</button>
+                                                    <button class="btn btn-sm btn-success">Accept</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- View Booking Modal -->
+    <div class="modal fade" id="viewBookingModal" tabindex="-1" aria-labelledby="viewBookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="viewBookingModalLabel">Booking Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Customer Information</h6>
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-220453-2.jpeg" alt="Customer" class="customer-avatar me-3">
+                                <div>
+                                    <h5 class="mb-0">Michael Johnson</h5>
+                                    <p class="mb-0 text-muted">Customer since June 2023</p>
+                                </div>
+                            </div>
+                            <p><strong>Phone:</strong> (555) 123-4567</p>
+                            <p><strong>Email:</strong> michael.johnson@example.com</p>
+                            <p><strong>Address:</strong> 123 Main St, Chicago, IL 60601</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Booking Information</h6>
+                            <p><strong>Service:</strong> Pipe Repair</p>
+                            <p><strong>Date & Time:</strong> June 15, 2023 at 9:30 AM</p>
+                            <p><strong>Estimated Duration:</strong> 1-2 hours</p>
+                            <p><strong>Status:</strong> <span class="badge bg-success">Confirmed</span></p>
+                            <p><strong>Payment Method:</strong> Credit Card (Visa ending in 4567)</p>
+                            <p><strong>Estimated Price:</strong> $120</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12">
+                            <h6>Service Details</h6>
+                            <p>Customer reported a leaking pipe under the kitchen sink. Water is slowly dripping and collecting in a bucket. The leak appears to be coming from the P-trap connection. Customer has turned off the water supply to minimize leakage.</p>
+                            <h6 class="mt-3">Special Instructions</h6>
+                            <p>Please call 10 minutes before arrival. There is a dog in the house that will be kept in a separate room during the service. Parking is available in the driveway.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#messageCustomerModal">Message Customer</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#startServiceModal">Start Service</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Service Modal -->
+    <div class="modal fade" id="startServiceModal" tabindex="-1" aria-labelledby="startServiceModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="startServiceModalLabel">Start Service</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>You are about to start the service for:</p>
+                    <div class="alert alert-info">
+                        <p class="mb-1"><strong>Customer:</strong> Michael Johnson</p>
+                        <p class="mb-1"><strong>Service:</strong> Pipe Repair</p>
+                        <p class="mb-1"><strong>Location:</strong> 123 Main St, Chicago</p>
+                        <p class="mb-0"><strong>Scheduled Time:</strong> June 15, 2023 at 9:30 AM</p>
+                    </div>
+                    <p>Starting the service will:</p>
+                    <ul>
+                        <li>Notify the customer that you've arrived</li>
+                        <li>Begin tracking the service duration</li>
+                        <li>Allow you to add materials and additional charges</li>
+                    </ul>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="arrived-check" required>
+                        <label class="form-check-label" for="arrived-check">
+                            I confirm that I have arrived at the customer's location
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success" id="confirm-start-service">Start Service</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Customer Modal -->
+    <div class="modal fade" id="messageCustomerModal" tabindex="-1" aria-labelledby="messageCustomerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="messageCustomerModalLabel">Message Customer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-220453-2.jpeg" alt="Customer" class="customer-avatar-small me-2">
+                        <div>
+                            <h6 class="mb-0">Michael Johnson</h6>
+                            <p class="mb-0 small text-muted">Pipe Repair - June 15, 9:30 AM</p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-template" class="form-label">Message Template</label>
+                        <select class="form-select" id="message-template">
+                            <option value="" selected disabled>Select a template</option>
+                            <option value="on-my-way">On My Way</option>
+                            <option value="running-late">Running Late</option>
+                            <option value="arrival-confirmation">Arrival Confirmation</option>
+                            <option value="additional-materials">Additional Materials Needed</option>
+                            <option value="custom">Custom Message</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="form-label">Message</label>
+                        <textarea class="form-control" id="message-text" rows="4">Hi Michael, I'm on my way to your location for the scheduled pipe repair service. I should arrive at approximately 9:30 AM as planned. Please have the water turned off before I arrive. Thank you!</textarea>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="send-sms-check" checked>
+                        <label class="form-check-label" for="send-sms-check">
+                            Send as SMS in addition to in-app message
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Service Provider Platform</h5>
+                    <p>Connecting quality service providers with customers in need.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="services.html" class="text-white">Services</a></li>
+                        <li><a href="providers.html" class="text-white">Providers</a></li>
+                        <li><a href="the-confidentmindset.com/testimonials.html" class="text-white">Testimonials</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Provider Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">How It Works</a></li>
+                        <li><a href="#" class="text-white">Success Stories</a></li>
+                        <li><a href="#" class="text-white">Provider Guidelines</a></li>
+                        <li><a href="#" class="text-white">Support Center</a></li>
+                        <li><a href="register-provider.html" class="text-white">Become a Provider</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Service St, City, Country</p>
+                        <p><i class="fas fa-phone me-2"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@serviceproviderplatform.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Service Provider Platform. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="privacy-policy.html" class="text-white me-3">Privacy Policy</a>
+                        <a href="terms-of-service.html" class="text-white">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        // Message template selection
+        document.getElementById('message-template').addEventListener('change', function() {
+            const messageText = document.getElementById('message-text');
+            const selectedTemplate = this.value;
+            
+            // Set predefined message based on template selection
+            switch(selectedTemplate) {
+                case 'on-my-way':
+                    messageText.value = "Hi Michael, I'm on my way to your location for the scheduled pipe repair service. I should arrive at approximately 9:30 AM as planned. Please have the water turned off before I arrive. Thank you!";
+                    break;
+                case 'running-late':
+                    messageText.value = "Hi Michael, I wanted to let you know that I'm running about 15 minutes late for our scheduled appointment due to traffic. I should arrive around 9:45 AM. I apologize for the inconvenience and appreciate your patience.";
+                    break;
+                case 'arrival-confirmation':
+                    messageText.value = "Hi Michael, I've arrived at your location for the scheduled pipe repair service. I'm in a white van parked outside. Please let me know if you're ready for me to begin.";
+                    break;
+                case 'additional-materials':
+                    messageText.value = "Hi Michael, after inspecting the pipe issue, I'll need to get some additional materials to complete the repair properly. This will require me to leave and return in about 30 minutes. Is this acceptable?";
+                    break;
+                case 'custom':
+                    messageText.value = "";
+                    break;
+            }
+        });
+
+        // Start service confirmation
+        document.getElementById('confirm-start-service').addEventListener('click', function() {
+            const arrivedCheck = document.getElementById('arrived-check');
+            if (arrivedCheck.checked) {
+                // Show success message
+                const modalBody = document.querySelector('#startServiceModal .modal-body');
+                modalBody.innerHTML = `
+                    <div class="text-center py-4">
+                        <div class="mb-4">
+                            <i class="fas fa-check-circle text-success fa-5x"></i>
+                        </div>
+                        <h4>Service Started!</h4>
+                        <p class="mb-4">You have successfully started the service for Michael Johnson.</p>
+                        <p>The customer has been notified of your arrival.</p>
+                    </div>
+                `;
+                document.querySelector('#startServiceModal .modal-footer').innerHTML = `
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                `;
+            } else {
+                // Show validation message
+                arrivedCheck.classList.add('is-invalid');
+                if (!document.querySelector('.invalid-feedback')) {
+                    const feedback = document.createElement('div');
+                    feedback.className = 'invalid-feedback';
+                    feedback.textContent = 'You must confirm that you have arrived at the customer\'s location';
+                    arrivedCheck.parentNode.appendChild(feedback);
+                }
+            }
+        });
+
+        // Tab switching based on URL parameter
+        document.addEventListener('DOMContentLoaded', function() {
+            // This would be implemented with actual tab switching logic
+            // For demonstration purposes only
+            const urlParams = new URLSearchParams(window.location.search);
+            const tab = urlParams.get('tab');
+            if (tab) {
+                // Activate the corresponding tab
+                document.querySelectorAll('.list-group-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                const activeTab = document.querySelector(`.list-group-item[href="provider-dashboard.html?tab=${tab}"]`);
+                if (activeTab) {
+                    activeTab.classList.add('active');
+                }
+            }
+        });
+    </script>
+</body>
+</html>

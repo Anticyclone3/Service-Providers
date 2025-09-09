@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register as Provider | Service Provider Platform</title>
+    <link rel="shortcut icon" href="https://the-confidentmindset.com/hubfs/Screenshot%202023-11-27%20at%2019.14.06-1.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- HubSpot Script Loader -->
+    <script src="./the-confidentmindset.com/hs/scriptloader/9082919.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                 <img src="c:\Users\HP\Desktop\Images\Logo.PNG"  height="40">
+                Service Provider Platform
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="providers.html">Find Providers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="the-confidentmindset.com/testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white ms-2" href="login.html">Login / Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-primary text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4">Join Our Provider Network</h1>
+            <p class="lead">Connect with customers and grow your business</p>
+        </div>
+    </header>
+
+    <!-- Registration Form Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card shadow">
+                        <div class="card-body p-4 p-md-5">
+                            <h2 class="card-title text-center mb-4">Provider Registration</h2>
+                            <form id="provider-registration-form" class="needs-validation" novalidate>
+                                <!-- Personal Information -->
+                                <div class="mb-4">
+                                    <h4 class="mb-3">Personal Information</h4>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="first-name" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" id="first-name" required>
+                                            <div class="invalid-feedback">
+                                                First name is required.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="last-name" class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" id="last-name" required>
+                                            <div class="invalid-feedback">
+                                                Last name is required.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="email" class="form-label">Email Address</label>
+                                            <input type="email" class="form-control" id="email" required>
+                                            <div class="invalid-feedback">
+                                                Please provide a valid email address.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="phone" class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control" id="phone" required>
+                                            <div class="invalid-feedback">
+                                                Phone number is required.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="password" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="password" required>
+                                            <div class="invalid-feedback">
+                                                Password is required.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="confirm-password" class="form-label">Confirm Password</label>
+                                            <input type="password" class="form-control" id="confirm-password" required>
+                                            <div class="invalid-feedback">
+                                                Passwords must match.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Business Information -->
+                                <div class="mb-4">
+                                    <h4 class="mb-3">Business Information</h4>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="business-name" class="form-label">Business Name</label>
+                                            <input type="text" class="form-control" id="business-name">
+                                            <div class="form-text">Leave blank if you operate as an individual.</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="years-experience" class="form-label">Years of Experience</label>
+                                            <input type="number" class="form-control" id="years-experience" min="0" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="service-category" class="form-label">Primary Service Category</label>
+                                            <select class="form-select" id="service-category" required>
+                                                <option value="" selected disabled>Select a category</option>
+                                                <option value="plumbing">Plumbing</option>
+                                                <option value="electrical">Electrical</option>
+                                                <option value="hvac">HVAC</option>
+                                                <option value="carpentry">Carpentry</option>
+                                                <option value="painting">Painting</option>
+                                                <option value="babysitting">Babysitting</option>
+                                                <option value="nanny">Nanny</option>
+                                                <option value="house-cleaning">House Cleaning</option>
+                                                <option value="lawn-care">Lawn Care</option>
+                                                <option value="tutoring">Tutoring</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12" id="other-service-container" style="display: none;">
+                                            <label for="other-service" class="form-label">Specify Other Service</label>
+                                            <input type="text" class="form-control" id="other-service">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="additional-services" class="form-label">Additional Services (Optional)</label>
+                                            <div class="row g-2">
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="service-plumbing">
+                                                        <label class="form-check-label" for="service-plumbing">Plumbing</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="service-electrical">
+                                                        <label class="form-check-label" for="service-electrical">Electrical</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="service-hvac">
+                                                        <label class="form-check-label" for="service-hvac">HVAC</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="service-carpentry">
+                                                        <label class="form-check-label" for="service-carpentry">Carpentry</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="service-painting">
+                                                        <label class="form-check-label" for="service-painting">Painting</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="service-cleaning">
+                                                        <label class="form-check-label" for="service-cleaning">Cleaning</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Location Information -->
+                                <div class="mb-4">
+                                    <h4 class="mb-3">Service Location</h4>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="address" class="form-label">Street Address</label>
+                                            <input type="text" class="form-control" id="address" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="address2" class="form-label">Apt/Suite (Optional)</label>
+                                            <input type="text" class="form-control" id="address2">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="city" class="form-label">City</label>
+                                            <input type="text" class="form-control" id="city" required>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="state" class="form-label">State</label>
+                                            <select class="form-select" id="state" required>
+                                                <option value="" selected disabled>Select State</option>
+                                                <option value="AL">Alabama</option>
+                                                <option value="AK">Alaska</option>
+                                                <option value="AZ">Arizona</option>
+                                                <!-- Add all states here -->
+                                                <option value="WY">Wyoming</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="zip" class="form-label">Zip Code</label>
+                                            <input type="text" class="form-control" id="zip" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="service-radius" class="form-label">Service Radius (miles)</label>
+                                            <select class="form-select" id="service-radius" required>
+                                                <option value="5">5 miles</option>
+                                                <option value="10" selected>10 miles</option>
+                                                <option value="15">15 miles</option>
+                                                <option value="25">25 miles</option>
+                                                <option value="50">50 miles</option>
+                                                <option value="100">100+ miles</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Profile Information -->
+                                <div class="mb-4">
+                                    <h4 class="mb-3">Profile Information</h4>
+                                    <div class="row g-3">
+                                        <div class="col-12">
+                                            <label for="profile-photo" class="form-label">Profile Photo</label>
+                                            <input type="file" class="form-control" id="profile-photo" accept="image/*">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="bio" class="form-label">Professional Bio</label>
+                                            <textarea class="form-control" id="bio" rows="4" required></textarea>
+                                            <div class="form-text">Describe your experience, qualifications, and the services you offer.</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="hourly-rate" class="form-label">Hourly Rate ($)</label>
+                                            <input type="number" class="form-control" id="hourly-rate" min="0" step="0.01" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="website" class="form-label">Website (Optional)</label>
+                                            <input type="url" class="form-control" id="website">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Credentials and Verification -->
+                                <div class="mb-4">
+                                    <h4 class="mb-3">Credentials & Verification</h4>
+                                    <div class="row g-3">
+                                        <div class="col-12">
+                                            <label for="license" class="form-label">Professional License/Certification (Optional)</label>
+                                            <input type="file" class="form-control" id="license" accept="image/*,.pdf">
+                                            <div class="form-text">Upload any relevant professional licenses or certifications.</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="license-number" class="form-label">License Number (Optional)</label>
+                                            <input type="text" class="form-control" id="license-number">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="license-expiry" class="form-label">License Expiry Date (Optional)</label>
+                                            <input type="date" class="form-control" id="license-expiry">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="background-check-consent" required>
+                                                <label class="form-check-label" for="background-check-consent">
+                                                    I consent to a background check as part of the verification process.
+                                                </label>
+                                                <div class="invalid-feedback">
+                                                    You must consent to a background check to register as a provider.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Terms and Conditions -->
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="terms-agree" required>
+                                        <label class="form-check-label" for="terms-agree">
+                                            I agree to the <a href="terms-of-service.html" target="_blank">Terms of Service</a>, <a href="privacy-policy.html" target="_blank">Privacy Policy</a>, and <a href="provider-agreement.html" target="_blank">Provider Agreement</a>.
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            You must agree to the terms to continue.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary btn-lg" type="submit">Register as Provider</button>
+                                    <p class="text-center mt-3">Already have an account? <a href="login.html">Login here</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Join as Provider Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Join as a Service Provider?</h2>
+            <div class="row g-4">
+                <!-- Benefit 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 text-center">
+                        <div class="card-body">
+                            <div class="icon-container mb-3">
+                                <i class="fas fa-users fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="card-title">Expand Your Client Base</h3>
+                            <p class="card-text">Connect with new customers in your area who are actively searching for your services.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Benefit 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 text-center">
+                        <div class="card-body">
+                            <div class="icon-container mb-3">
+                                <i class="fas fa-calendar-alt fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="card-title">Simplified Scheduling</h3>
+                            <p class="card-text">Manage your appointments, availability, and client communications all in one place.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Benefit 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 text-center">
+                        <div class="card-body">
+                            <div class="icon-container mb-3">
+                                <i class="fas fa-credit-card fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="card-title">Secure Payments</h3>
+                            <p class="card-text">Get paid faster with our secure payment processing system and reduce payment collection hassles.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Benefit 4 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 text-center">
+                        <div class="card-body">
+                            <div class="icon-container mb-3">
+                                <i class="fas fa-chart-line fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="card-title">Grow Your Business</h3>
+                            <p class="card-text">Build your reputation through verified reviews and increase your visibility to potential clients.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Benefit 5 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 text-center">
+                        <div class="card-body">
+                            <div class="icon-container mb-3">
+                                <i class="fas fa-tools fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="card-title">Business Tools</h3>
+                            <p class="card-text">Access professional tools for invoicing, client management, and business analytics.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Benefit 6 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 text-center">
+                        <div class="card-body">
+                            <div class="icon-container mb-3">
+                                <i class="fas fa-shield-alt fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="card-title">Verified Status</h3>
+                            <p class="card-text">Stand out with a verified provider badge that builds trust with potential clients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Provider Testimonials -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Providers Say</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div id="providerTestimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Testimonial 1 -->
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-220453-2.jpeg" alt="Provider" class="provider-avatar">
+                                            <div class="ms-3">
+                                                <h5 class="mb-0">James Wilson</h5>
+                                                <p class="text-muted mb-0">Plumber, Chicago</p>
+                                            </div>
+                                        </div>
+                                        <p class="testimonial-text">"Since joining this platform, my business has grown by 40%. The scheduling system saves me hours each week, and the secure payment processing means I get paid faster. It's been a game-changer for my plumbing business."</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testimonial 2 -->
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-774909-3.jpeg" alt="Provider" class="provider-avatar">
+                                            <div class="ms-3">
+                                                <h5 class="mb-0">Lisa Rodriguez</h5>
+                                                <p class="text-muted mb-0">House Cleaner, Boston</p>
+                                            </div>
+                                        </div>
+                                        <p class="testimonial-text">"As a house cleaner, finding consistent clients was always challenging. This platform has connected me with reliable, long-term clients who value my services. The verification process gives clients confidence in hiring me."</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testimonial 3 -->
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <img src="https://the-confidentmindset.com/hs-fs/hubfs/Imported_Blog_Media/pexels-photo-1516680-1.jpeg" alt="Provider" class="provider-avatar">
+                                            <div class="ms-3">
+                                                <h5 class="mb-0">Mark Thompson</h5>
+                                                <p class="text-muted mb-0">Electrician, San Francisco</p>
+                                            </div>
+                                        </div>
+                                        <p class="testimonial-text">"The platform's business tools have helped me streamline my operations and focus more on providing quality electrical services. The review system has been fantastic for building my reputation in the community."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#providerTestimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#providerTestimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="providerFAQ">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How much does it cost to join as a provider?
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#providerFAQ">
+                                <div class="accordion-body">
+                                    Registration is free. We operate on a commission-based model, taking a small percentage of each completed job booked through our platform. There are no monthly fees or upfront costs to join.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How does the verification process work?
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#providerFAQ">
+                                <div class="accordion-body">
+                                    Our verification process includes identity verification, professional credential validation, and background checks. Once you submit your registration, our team will review your information and guide you through the verification steps. The process typically takes 3-5 business days.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How do I receive payments for my services?
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#providerFAQ">
+                                <div class="accordion-body">
+                                    Clients pay through our secure payment system. Once a service is completed and confirmed by the client, the payment is processed and transferred to your linked bank account or payment method. Funds are typically available within 2-3 business days after service completion.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Can I set my own schedule and prices?
+                                </button>
+                            </h3>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#providerFAQ">
+                                <div class="accordion-body">
+                                    Yes, you have complete control over your availability, service area, and pricing. You can update your schedule at any time through your provider dashboard, and you're free to set competitive rates based on your experience and the local market.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 5 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    What happens if there's a dispute with a client?
+                                </button>
+                            </h3>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#providerFAQ">
+                                <div class="accordion-body">
+                                    We have a dedicated dispute resolution team to handle any issues that may arise between providers and clients. Both parties can submit their concerns through our platform, and our team will work to find a fair resolution based on our service policies and terms of agreement.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Service Provider Platform</h5>
+                    <p>Connecting quality service providers with customers in need.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="services.html" class="text-white">Services</a></li>
+                        <li><a href="providers.html" class="text-white">Providers</a></li>
+                        <li><a href="the-confidentmindset.com/testimonials.html" class="text-white">Testimonials</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Service Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html#home-repair" class="text-white">Home Services</a></li>
+                        <li><a href="services.html#childcare" class="text-white">Childcare</a></li>
+                        <li><a href="services.html#cleaning" class="text-white">Cleaning</a></li>
+                        <li><a href="services.html#tutoring" class="text-white">Tutoring</a></li>
+                        <li><a href="services.html#landscaping" class="text-white">Landscaping</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Service St, City, Country</p>
+                        <p><i class="fas fa-phone me-2"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@serviceproviderplatform.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Service Provider Platform. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="privacy-policy.html" class="text-white me-3">Privacy Policy</a>
+                        <a href="terms-of-service.html" class="text-white">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        // Show/hide other service field based on selection
+        document.getElementById('service-category').addEventListener('change', function() {
+            const otherServiceContainer = document.getElementById('other-service-container');
+            if (this.value === 'other') {
+                otherServiceContainer.style.display = 'block';
+                document.getElementById('other-service').setAttribute('required', 'required');
+            } else {
+                otherServiceContainer.style.display = 'none';
+                document.getElementById('other-service').removeAttribute('required');
+            }
+        });
+
+        // Form validation
+        (function () {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+</body>
+</html>
